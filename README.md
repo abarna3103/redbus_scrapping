@@ -21,7 +21,14 @@ This project is designed to scrape bus information from the Redbus website for m
 This project currently supports scraping bus details for the following states:
 - Rajasthan
 - South Bengal
-- [Add other states here as you extend the project]
+- Telengana
+- UP
+- Assam
+- KAAC
+- KADAMBA
+- Kerala
+- Himachal
+- West bengal
 
 ## Technologies Used
 - **Python**: For scripting and data handling.
@@ -32,10 +39,10 @@ This project currently supports scraping bus details for the following states:
 ## Prerequisites
 - Python 3.7+
 - Google Chrome browser
-- ChromeDriver (compatible with your Chrome browser version)
+- ChromeDriver
 - Selenium package
 - Pandas package
-- Git (optional, for version control)
+- Git
 
 ## Installation
 1. Clone this repository:
@@ -64,7 +71,7 @@ This project currently supports scraping bus details for the following states:
 redbus-scraping/
 ├── redbus_scrapped_sl.py # Streamlit application 
 ├── README.md           # Project documentation
-├── merged_states/      # Main script for scraping
+├── scraping_data_of_various_states/      # Main script for scraping
 └── mysql_redbus/       # to store data in DB
 ```
 
