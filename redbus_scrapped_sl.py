@@ -28,7 +28,7 @@ def fetch_source_names(engine):
 
 # Fetch filtered bus types for selection
 def fetch_bus_types():
-    return ["NON A/C Seater", "NON A/C Sleeper", "AC Sleeper", "AC Seater", "NON A/C Semi Sleeper", "AC Semi Sleeper"]
+    return ["Non A/C Seater / Sleeper", "A/C Seater / Sleeper", "NON A/C Semi Sleeper", "A/C Semi Sleeper"]
 
 
 # Fetch bus data with multiple filters
@@ -75,7 +75,7 @@ def fetch_data(engine, source, route_name, price_range, star_range, bus_type, av
                 "price_max": price_range[1],
                 "star_min": star_range[0],
                 "star_max": star_range[1],
-                "bus_type": bus_type if bus_type != "All" else None,
+                "bus_type": f"%{bus_type}%" if bus_type != "All" else None,
                 "availability": availability if availability else None,
                 "start_time": start_time,
                 "end_time": end_time,
